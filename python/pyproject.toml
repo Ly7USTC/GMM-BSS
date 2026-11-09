@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmmbss"
+version = "0.1.0"
+description = "GMM estimation of gamma-kernel Brownian semistationary processes"
+authors = [{ name = "Yuan Li" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.9", "pandas>=1.4", "statsmodels>=0.13", "matplotlib>=3.5"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["gmmbss"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
