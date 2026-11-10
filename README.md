@@ -7,7 +7,7 @@ implementation; the Python code is cross-checked against R in the test suite.
 ## Model
 
 $$
-X_t = \mu + \int_{-\infty}^{t} g(t-s)\,\sigma_s\,dW_s, \qquad g(x) = x^{\nu} e^{-\lambda x},
+X_t = \mu + \int_{-\infty}^{t} g(t-s)\sigma_sdW_s, \qquad g(x) = x^{\nu} e^{-\lambda x},
 \quad \nu \in \left(-\tfrac12, \tfrac12\right)\setminus\lbrace 0\rbrace,\ \lambda > 0 .
 $$
 
@@ -15,7 +15,7 @@ The volatility $\sigma$ is a stationary process independent of $W$ (a Gamma-OU
 process in the simulations). The autocovariance has the closed form
 
 $$
-R_{\nu,\lambda}(t) = \mathbb{E}[\sigma_0^2]\,\frac{\Gamma(2\nu+1)}{(2\lambda)^{2\nu+1}}\,
+R_{\nu,\lambda}(t) = \mathbb{E}[\sigma_0^2]\frac{\Gamma(2\nu+1)}{(2\lambda)^{2\nu+1}}
 \tilde K_{\nu+\frac12}(\lambda t), \qquad
 \tilde K_a(x) = \frac{2^{1-a}}{\Gamma(a)}\,x^{a} K_a(x),
 $$
