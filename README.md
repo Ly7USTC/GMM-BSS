@@ -17,7 +17,7 @@ process in the simulations). The autocovariance has the closed form
 $$
 R_{\nu,\lambda}(t) = \mathbb{E}[\sigma_0^2]\frac{\Gamma(2\nu+1)}{(2\lambda)^{2\nu+1}}
 \tilde K_{\nu+\frac12}(\lambda t), \qquad
-\tilde K_a(x) = \frac{2^{1-a}}{\Gamma(a)}\,x^{a} K_a(x),
+\tilde K_a(x) = \frac{2^{1-a}}{\Gamma(a)}x^{a} K_a(x),
 $$
 
 where $K_a$ is the modified Bessel function of the second kind.
